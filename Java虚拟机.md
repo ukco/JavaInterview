@@ -189,7 +189,7 @@ JVM堆中**新生代便采用复制算法**。堆分配结构图。
 
 **stop-the-world**：
 
-需要记住一个单词：`stop-the-world`。它会在任何一种GC算法中发生。stop-the-world 意味着JVM因为需要执行GC而`停止`应用程序的执行。当stop-the-world 发生时，除GC所需的线程外，所有的`线程`都进入`等待`状态，直到GC任务完成。GC优化很多时候就是减少stop-the-world 的发生。
+需要记住一个单词：`stop-the-world`。它会在任何一种GC算法中发生。stop-the-world 意味着**JVM因为需要执行GC而停止应用程序的执行**。当stop-the-world 发生时，**除GC所需的线程外，所有的线程都进入等待状态，直到GC任务完成**。GC优化很多时候就是减少stop-the-world 的发生。
 
 ![image-20210327210450545](interviewImg/image-20210327210450545.png?lastModify=1630743326)
 
